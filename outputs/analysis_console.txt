@@ -1,0 +1,75 @@
+
+==============================================================================
+TABLE 1  Analysis population
+==============================================================================
+    System  Released source records  Evaluable records  Records not included
+    Basalt                      196                196                     0
+    OKVIS2                      192                192                     0
+ ORB-SLAM3                      192                192                     0
+    DM-VIO                      192                 94                    98
+Snake-SLAM                      196                187                     9
+     Total                      968                861                   107
+
+RTE available among evaluable: 861/861
+Snake-SLAM records supplied by the released rtvalid fallback: 14
+
+==============================================================================
+TABLE 2  Trajectory error at high output coverage (C >= 0.99, S >= 0.99)
+==============================================================================
+                                      Measure     Result
+Evaluable records before coverage restriction 861.000000
+         Records with C >= 0.99 and S >= 0.99 612.000000
+                               Median ATE (m)   0.166893
+                                  P90 ATE (m)   1.117947
+                                  P95 ATE (m)  19.004653
+                             ATE >= 1 m count  66.000000
+                           ATE >= 1 m percent  10.784314
+                 ATE >= 1 m bootstrap 95% low   6.666667
+                ATE >= 1 m bootstrap 95% high  15.298154
+                            ATE >= 10 m count  32.000000
+                          ATE >= 10 m percent   5.228758
+                ATE >= 10 m bootstrap 95% low   2.814570
+               ATE >= 10 m bootstrap 95% high   7.980456
+
+Composition of the eligible subset:
+    System   n  ATE>=1m  ATE>=10m  median ATE
+    Basalt 196        7         2    0.115621
+    OKVIS2 189        9         2    0.063883
+ ORB-SLAM3 186       28        17    0.337802
+    DM-VIO  41       22        11    1.281498
+Snake-SLAM   0        0         0         NaN
+
+==============================================================================
+TABLE 3  Sensitivity
+==============================================================================
+  Joint coverage, tau = 0.95                    n=675  >=1m  88 (13.037%)  >=10m  48 ( 7.111%)  [Snake n=28]
+  Primary: joint coverage, tau = 0.99           n=612  >=1m  66 (10.784%)  >=10m  32 ( 5.229%)  [Snake n=0]
+  Joint coverage, tau = 0.999                   n=543  >=1m  44 ( 8.103%)  >=10m  21 ( 3.867%)  [Snake n=0]
+  Exact C = S = 1.0                             n=387  >=1m  35 ( 9.044%)  >=10m  19 ( 4.910%)  [Snake n=0]
+  Completion only, C >= 0.99                    n=631  >=1m  78 (12.361%)  >=10m  40 ( 6.339%)  [Snake n=3]
+  Equal sequence weighting                     64 seq  >=1m 10.198%   >=10m  4.933%
+  equal-sequence-weighted bootstrap 95% CI, ATE>=1m : [6.2883, 14.5854]
+  equal-sequence-weighted bootstrap 95% CI, ATE>=10m : [2.6120, 7.6844]
+  benchmark-selected evaluable records: 294
+  Benchmark-selected, C,S >= 0.99               n=211  >=1m  22 (10.427%)  >=10m  10 ( 4.739%)  [Snake n=0]
+  Benchmark-selected, C = S = 1.0               n=130  >=1m   9 ( 6.923%)  >=10m   4 ( 3.077%)  [Snake n=0]
+     drop Basalt      contributes  196  n= 416  >=1m 14.183%  >=10m  7.212%
+     drop OKVIS2      contributes  189  n= 423  >=1m 13.475%  >=10m  7.092%
+     drop ORB-SLAM3   contributes  186  n= 426  >=1m  8.920%  >=10m  3.521%
+     drop DM-VIO      contributes   41  n= 571  >=1m  7.706%  >=10m  3.678%
+     drop Snake-SLAM  contributes    0  n= 612  >=1m 10.784%  >=10m  5.229%   <- leaves the subset unchanged
+
+==============================================================================
+TABLE 4  Run-to-run variation (ORB-SLAM3 real-time, OKVIS2 causal VIO)
+==============================================================================
+   System  Sequences with 3 released runs  All 3 runs high coverage  Median ATE max/min  P90 ATE max/min  Median RTE max/min  P90 RTE max/min  Crossed 1m n  Crossed 1m percent  Crossed 10m n  Crossed 10m percent  Ratio >= 2x n  Ratio >= 10x n
+ORB-SLAM3                              64                        59            1.325883        10.028995            1.229398         5.131186             8           13.559322              5             8.474576             21               6
+   OKVIS2                              64                        63            1.249652         1.625923            1.046664         1.226613             2            3.174603              1             1.587302              1               1
+
+==============================================================================
+Repeated-run, exact C = S = 1.0 in all three executions
+==============================================================================
+  ORB-SLAM3   triplets= 58  crossed 1m=7  crossed 10m=4
+  OKVIS2      triplets=  2  crossed 1m=0  crossed 10m=0
+
+wrote outputs/*.csv and outputs/analysis_report.json

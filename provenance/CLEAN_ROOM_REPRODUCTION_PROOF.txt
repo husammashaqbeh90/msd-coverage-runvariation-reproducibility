@@ -1,0 +1,27 @@
+CLEAN-ROOM REPRODUCTION RECORD
+Release: v4.0.0
+Date: 2026-08-25
+
+Purpose
+-------
+This record identifies the live verification procedure for the final companion
+package. It is retained as a concise audit record; the authoritative test is
+always the executable command below.
+
+Procedure
+---------
+1. Extract the release archive into a new directory.
+2. Create the pinned Python environment described in requirements.txt.
+3. Run: bash verify_package.sh
+
+What the live check proves
+--------------------------
+- Every shipped, manifest-covered file matches SHA256SUMS.txt before analysis.
+- The complete analysis pipeline, including Supplementary Table S5, completes.
+- The regenerated outputs and figures match the checksums captured before the
+  rerun.
+
+The package was rebuilt from the released metric JSON inputs after the final
+display-name, provenance-table, environment-lock, and release-documentation
+updates. The final release archive was then verified from a separate fresh
+extraction. No VIO or SLAM system was executed during this verification.

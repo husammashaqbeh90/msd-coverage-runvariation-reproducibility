@@ -1,0 +1,15 @@
+number	source_archive	runs	evaluation_group	trajectory_artifact_evaluated	status_in_this_study
+1	Basalt.zip	196	basalt	trajectory.csv	Analyzed
+2	DM-VIO.zip	192	dmvio.rt	result.rt.csv	Not analyzed
+3	DM-VIO.zip	192	dmvio.scaled	resultScaled.txt	Analyzed
+4	OKVIS2.zip	192	okvis2.vio	tracking.vio.csv	Analyzed
+5	OKVIS2.zip	192	okvis2.final	tracking.vio.final.csv	Not analyzed
+6	OKVIS2-SLAM.zip	192	okvis2.slamfinal	tracking.slam.final.csv	Not analyzed
+7	OKVIS2-SLAM.zip	192	okvis2.slamfull	tracking.slam.full.csv	Not analyzed
+8	OKVIS2-SLAM.zip	192	okvis2.slam	tracking.slam.csv	Not analyzed
+9	ORB_SLAM3.zip	192	orbslam3.rt	rt_tracking.csv	Analyzed
+10	ORB_SLAM3.zip	192	orbslam3.ba	f_tracking.csv	Not analyzed
+11	Snake-SLAM.zip	196	snakeslam.rtvalid	trajectory.rt.valid.csv	Fallback only
+12	Snake-SLAM.zip	196	snakeslam.causal	trajectory.causal.csv	Analyzed
+13	Snake-SLAM.zip	196	snakeslam.rt	trajectory.rt.csv	Not analyzed
+14	Snake-SLAM.zip	196	snakeslam.ba	trajectory.ba.csv	Not analyzed

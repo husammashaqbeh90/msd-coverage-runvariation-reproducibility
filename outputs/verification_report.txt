@@ -1,0 +1,58 @@
+A. Published Table IV cross-check (MSD paper, Systems evaluation)
+  [PASS] MIO01 Basalt ATE = 62.0 cm  got 62.0
+  [PASS] MIO01 OKVIS2 ATE = 50.4 cm  got 50.4
+  [PASS] MIO01 Snake-SLAM ATE = 49.7 cm  got 49.7
+  [PASS] MIO01 Snake-SLAM completed frames = 65%  got 65
+  [PASS] MIO02 Basalt ATE = 117.7 cm  got 117.7
+  [PASS] MIO02 OKVIS2 ATE = 172.5 cm  got 172.5
+  [PASS] MIO02 ORB-SLAM3 ATE = 62.9 cm  got 62.9
+  [PASS] MIO02 Snake-SLAM ATE = 92.2 cm  got 92.2
+  [PASS] MIO02 Snake-SLAM completed frames = 78%  got 78
+  [PASS] MIO03 Basalt ATE = 9.5 cm  got 9.5
+  [PASS] MIO03 OKVIS2 ATE = 6.4 cm  got 6.4
+  [PASS] MIO03 ORB-SLAM3 ATE = 12.0 cm  got 12.0
+  [PASS] MIO03 Snake-SLAM ATE = 22.3 cm  got 22.3
+  [PASS] MIO03 Snake-SLAM completed frames = 92%  got 92
+  [PASS] MIO04 Basalt ATE = 20.6 cm  got 20.6
+  [PASS] MIO04 OKVIS2 ATE = 18.7 cm  got 18.7
+  [PASS] MIO04 ORB-SLAM3 ATE = 257.5 cm  got 257.5
+  [PASS] MIO04 Snake-SLAM ATE = 77.6 cm  got 77.6
+  [PASS] MIO04 Snake-SLAM completed frames = 15%  got 15
+  [PASS] MIO05 Basalt ATE = 3.4 cm  got 3.4
+  [PASS] MIO05 OKVIS2 ATE = 3.9 cm  got 3.9
+  [PASS] MIO05 ORB-SLAM3 ATE = 26.6 cm  got 26.6
+  [PASS] MIO05 Snake-SLAM ATE = 20.0 cm  got 20.0
+  [PASS] MIO05 Snake-SLAM completed frames = 89%  got 89
+  [PASS] MIO06 Basalt ATE = 4.9 cm  got 4.9
+  [PASS] MIO06 OKVIS2 ATE = 27.5 cm  got 27.5
+  [PASS] MIO06 ORB-SLAM3 ATE = 69.2 cm  got 69.2
+  [PASS] MIO06 Snake-SLAM ATE = 20.7 cm  got 20.7
+  [PASS] MIO06 Snake-SLAM completed frames = 79%  got 79
+  [PASS] MIO07 Basalt ATE = 2.3 cm  got 2.3
+  [PASS] MIO07 OKVIS2 ATE = 3.1 cm  got 3.1
+  [PASS] MIO07 ORB-SLAM3 ATE = 10.8 cm  got 10.8
+  [PASS] MIO07 Snake-SLAM ATE = 50.5 cm  got 50.5
+  [PASS] MIO07 Snake-SLAM completed frames = 84%  got 84
+  (27 ATE cells and 7 completed-frame cells checked)
+
+B. Structural checks
+  [PASS] 64 distinct sequences
+  [PASS] 861 records with metrics  got 861
+  [PASS] no row missing ATE while having C and S
+  [PASS] RTE present for every evaluable record
+  [PASS] Snake-SLAM fallback rows are sourced from rtvalid
+  [PASS] no Snake-SLAM record reaches S >= 0.99  max S = 0.985810
+  [PASS] Basalt/Snake DCK variant present on exactly 4 sequences
+  [PASS] benchmark-selected: Basalt, OKVIS2, ORB-SLAM3 contribute all 64 sequences  {'Basalt': 64, 'DM-VIO': 41, 'OKVIS2': 64, 'ORB-SLAM3': 64, 'Snake-SLAM': 61}
+  [PASS] benchmark-selected: DM-VIO contributes 41 (sequences whose selected run produced resultScaled.txt)  got 41
+  [PASS] benchmark-selected: Snake-SLAM contributes 61; the 3 absent sequences are MGO08/MIO10/MIO11 (no causal and no rtvalid trajectory error)  got 61, missing ['MGO08', 'MIO10', 'MIO11']
+  [PASS] benchmark-selected population size = 64*3 + 41 + 61 = 294  got 294
+  [PASS] Supplementary Table S5 contains fourteen evaluation groups  got 14
+  [PASS] Supplementary Table S5 contains six source archives  got 6
+  [PASS] Supplementary Table S5 identifies the five analysed groups and 968 source records  groups=5, records=968
+  [PASS] Supplementary Table S5 identifies one released fallback group
+
+C. Comparison-group sanity (not analysed)
+  [PASS] snakeslam.rt reports S >= 0.99 for the large majority  193/196
+
+ALL CHECKS PASSED

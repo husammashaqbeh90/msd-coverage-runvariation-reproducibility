@@ -1,0 +1,6 @@
+Analysis,Records contributed to subset,n after removal,ATE>=1m (%),ATE>=10m (%),Status
+drop Basalt,196,416,14.1827,7.2115,informative
+drop OKVIS2,189,423,13.4752,7.0922,informative
+drop ORB-SLAM3,186,426,8.9202,3.5211,informative
+drop DM-VIO,41,571,7.7058,3.6778,informative
+drop Snake-SLAM,0,612,10.7843,5.2288,no effect (contributes 0 records)

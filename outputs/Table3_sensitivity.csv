@@ -1,0 +1,11 @@
+Analysis,Eligible basis,ATE>=1m (%),ATE>=10m (%),n>=1m,n>=10m,Snake-SLAM n
+"Joint coverage, tau = 0.95",675 records,13.037,7.1111,88,48,28
+"Primary: joint coverage, tau = 0.99",612 records,10.7843,5.2288,66,32,0
+"Joint coverage, tau = 0.999",543 records,8.1031,3.8674,44,21,0
+Exact C = S = 1.0,387 records,9.0439,4.9096,35,19,0
+"Completion only, C >= 0.99",631 records,12.3613,6.3391,78,40,3
+Equal sequence weighting,64 sequences,10.1976,4.9326,,,
+"Benchmark-selected, C,S >= 0.99",211 records,10.4265,4.7393,22,10,0
+"Benchmark-selected, C = S = 1.0",130 records,6.9231,3.0769,9,4,0
+Leave-one-system-out (4 informative removals),416-571 records,7.71-14.18,3.52-7.21,,,
+  note: removing Snake-SLAM leaves the subset unchanged,612 records,10.7843,5.2288,,,

@@ -1,0 +1,64 @@
+{
+  "evaluable": 861,
+  "rte_available_among_evaluable": 861,
+  "snakeslam_fallback_records": 14,
+  "ate_ge_1m_n": 66,
+  "ate_ge_1m_pct": 10.784313725490197,
+  "ate_ge_1m_ci": [
+    6.666666666666667,
+    15.298154444685567
+  ],
+  "ate_ge_10m_n": 32,
+  "ate_ge_10m_pct": 5.228758169934641,
+  "ate_ge_10m_ci": [
+    2.814569536423841,
+    7.980456026058632
+  ],
+  "primary_high_coverage": 612,
+  "median_ate": 0.1668926119,
+  "p90_ate": 1.1179470106699978,
+  "p95_ate": 19.004652658234964,
+  "equal_sequence_weighted": {
+    "ge1m": 10.197597541347541,
+    "ge10m": 4.9326194638694645
+  },
+  "eqw_ci_1": [
+    6.288261434745811,
+    14.585394423285045
+  ],
+  "eqw_ci_10": [
+    2.612038352272728,
+    7.684379856254854
+  ],
+  "benchmark_selected_evaluable": 294,
+  "benchmark_selected_high_coverage": 211,
+  "loo_informative_range": {
+    "ge1m": [
+      7.705779334500876,
+      14.182692307692308
+    ],
+    "ge10m": [
+      3.5211267605633805,
+      7.211538461538462
+    ],
+    "basis": [
+      416,
+      571
+    ],
+    "non_contributing": [
+      "Snake-SLAM"
+    ]
+  },
+  "orb_triplets": 59,
+  "okvis_triplets": 63,
+  "exact_triplets_ORB-SLAM3": [
+    58,
+    7,
+    4
+  ],
+  "exact_triplets_OKVIS2": [
+    2,
+    0,
+    0
+  ]
+}

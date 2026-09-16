@@ -1,0 +1,14 @@
+Measure,Result
+Evaluable records before coverage restriction,861.0
+Records with C >= 0.99 and S >= 0.99,612.0
+Median ATE (m),0.1668926119
+P90 ATE (m),1.1179470106699978
+P95 ATE (m),19.004652658234964
+ATE >= 1 m count,66.0
+ATE >= 1 m percent,10.784313725490197
+ATE >= 1 m bootstrap 95% low,6.666666666666667
+ATE >= 1 m bootstrap 95% high,15.298154444685567
+ATE >= 10 m count,32.0
+ATE >= 10 m percent,5.228758169934641
+ATE >= 10 m bootstrap 95% low,2.814569536423841
+ATE >= 10 m bootstrap 95% high,7.980456026058632
