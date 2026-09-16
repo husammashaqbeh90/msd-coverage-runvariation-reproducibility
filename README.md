@@ -12,9 +12,13 @@ all reported numerical summaries, Supplementary Tables S1–S5, and Figures 1–
 from the released metric JSON files included here. It does not download data,
 modify the released source tree, or execute a VIO/SLAM system.
 
-The permanent repository URL and archival DOI are publication metadata to be
-added to the manuscript when this exact release is deposited. They do not alter
-the inputs, code, or reported results in this archive.
+The permanent repository URL is:
+
+<https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility>
+
+The archival DOI will be assigned by Zenodo when the exact `v4.0.0` GitHub
+release is deposited. It does not alter the inputs, code, or reported results
+in this archive.
 
 ## Reproduce everything
 
@@ -96,3 +100,20 @@ The study limitations are documented in
 `provenance/RELEASE_SCOPE_AND_LIMITATIONS.md`. They are interpretation bounds,
 not unresolved computational failures. Historical corrections from the earlier
 analysis are retained in `provenance/MANUSCRIPT_CHANGES_v1_to_v3.md`.
+
+## Citation
+
+Metadata for citing this software package are provided in `CITATION.cff`.
+After the `v4.0.0` release is archived in Zenodo, cite the Zenodo **version
+DOI** for this exact release; the Zenodo **concept DOI** may be used when a
+reference to all versions is appropriate. The manuscript itself is not yet a
+published article and therefore has no article DOI.
+
+## License and attribution
+
+This repository uses separate terms for code and data. The original analysis
+code is released under the MIT License. The released MSD metric JSON inputs,
+the evaluation-group provenance table, and the study-specific derived outputs
+and figures are available under CC BY 4.0, with attribution to the Monado SLAM
+Dataset. See `LICENSE` for the complete scope, attribution text, and links to
+the applicable licenses.

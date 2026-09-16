@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it using the metadata below."
+type: software
+title: "MSD Coverage and Run-Variation Reproducibility Package"
+version: 4.0.0
+date-released: 2026-09-16
+authors:
+  - family-names: Mashaqbeh
+    given-names: Husam S.
+  - family-names: Mohd Hashim
+    given-names: Siti Hazyanti
+repository-code: "https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility"
+url: "https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility"
+abstract: "Reproducibility package for the released-artifact secondary analysis reported in 'Trajectory Error and Run-to-Run Variation at High Output Coverage: Evidence from Released Monado SLAM Benchmark Results'."
+keywords:
+  - visual-inertial odometry
+  - SLAM
+  - XR tracking
+  - reproducibility
+  - benchmark analysis
