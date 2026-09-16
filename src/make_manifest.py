@@ -5,6 +5,12 @@ import os
 
 PKG = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP = {"SHA256SUMS.txt", "MANIFEST.tsv"}
+SKIP_DIRS = {"__pycache__", ".git", ".venv", "venv", "env"}
+
+
+def keep_dir(name):
+    """Keep package content, excluding local Python/tool environments."""
+    return name not in SKIP_DIRS and not name.startswith(".venv-")
 
 ROLE = [("inputs/batch/", "input  - released metric JSON (verbatim copy)"),
         ("inputs/provenance/", "input  - evaluation-group provenance table"),
@@ -33,7 +39,7 @@ def sha256(p):
 
 files = []
 for root, dirs, names in os.walk(PKG):
-    dirs[:] = [d for d in dirs if d not in {"__pycache__", ".git"}]
+    dirs[:] = [d for d in dirs if keep_dir(d)]
     for n in sorted(names):
         rel = os.path.relpath(os.path.join(root, n), PKG)
         if rel in SKIP or rel.endswith(".pyc"):
@@ -55,7 +61,7 @@ with open(os.path.join(PKG, "MANIFEST.tsv"), "w", encoding="utf-8") as m, \
 # the first v3 archive, where a provenance file shipped outside the checksums.
 present = set()
 for root, dirs, names in os.walk(PKG):
-    dirs[:] = [d for d in dirs if d not in {"__pycache__", ".git"}]
+    dirs[:] = [d for d in dirs if keep_dir(d)]
     for n in names:
         rel = os.path.relpath(os.path.join(root, n), PKG)
         if rel in SKIP or rel.endswith(".pyc"):
