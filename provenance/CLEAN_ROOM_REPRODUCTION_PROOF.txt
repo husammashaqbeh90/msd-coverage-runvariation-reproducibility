@@ -1,6 +1,6 @@
 CLEAN-ROOM REPRODUCTION RECORD
-Release: v4.1.0
-Date: 2026-09-17
+Release: v4.1.1
+Date: 2026-09-18
 
 Purpose
 -------
@@ -22,8 +22,8 @@ What the live check proves
 - The regenerated outputs and figures match the checksums captured before the
   rerun.
 
-The package was rebuilt from the released metric JSON inputs after the v4.1.0
-figure and release-documentation updates. The final release archive was then
+The package retains the v4.1.0 figure and release-documentation updates and
+adds only authorship and funding metadata. The final release archive was then
 verified from a separate fresh extraction: 77 of 77 manifest-covered files
 matched before and after the full rerun. The `inputs/` and `outputs/`
 directories are byte-identical to v4.0.0. No VIO or SLAM system was executed

@@ -1,4 +1,4 @@
-# Reproducibility package v4.1.0
+# Reproducibility package v4.1.1
 
 Companion package for the manuscript:
 
@@ -13,12 +13,18 @@ and Supplementary Figure S1
 from the released metric JSON files included here. It does not download data,
 modify the released source tree, or execute a VIO/SLAM system.
 
+## Authors and funding
+
+Authors: Husam S. Mashaqbeh; Siti Hazyanti Mohd Hashim; Azlan B. Abd Aziz; and Hamza A. Mashagba.
+
+Funding: This work was supported by the Multimedia University (MMU) Postdoc Fellowship Fund (grant no. MMUI/260011).
+
 The permanent repository URL is:
 
 <https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility>
 
-The version-specific archival DOI for v4.1.0 will be assigned when the exact
-`v4.1.0` GitHub release is deposited in Zenodo. Until that deposit is complete,
+The version-specific archival DOI for v4.1.1 will be assigned when the exact
+`v4.1.1` GitHub release is deposited in Zenodo. Until that deposit is complete,
 the repository URL above identifies the public development record. The DOI
 must not be copied from an earlier release because each archived version has
 its own persistent identifier.
@@ -67,7 +73,7 @@ files themselves is absent from the manifest. `SHA256SUMS.txt` and
 
 `src/figures.py` is retained as the legacy figure generator, with only the
 terminology in the supplementary figure annotation updated from “executions”
-to “runs.” The v4.1.0 pipeline calls `src/figures_v2.py`, which generates the
+ to “runs.” The v4.1.1 pipeline calls `src/figures_v2.py`, which generates the
 revised main figures and invokes the legacy script to reproduce the 122-triplet
 chart now distributed as Supplementary Figure S1.
 
@@ -113,7 +119,7 @@ analysis are retained in `provenance/MANUSCRIPT_CHANGES_v1_to_v3.md`.
 ## Citation
 
 Metadata for citing this software package are provided in `CITATION.cff`.
-After the `v4.1.0` release is archived in Zenodo, cite the Zenodo **version
+After the `v4.1.1` release is archived in Zenodo, cite the Zenodo **version
 DOI** for this exact release; the Zenodo **concept DOI** may be used when a
 reference to all versions is appropriate. The manuscript itself is not yet a
 published article and therefore has no article DOI.

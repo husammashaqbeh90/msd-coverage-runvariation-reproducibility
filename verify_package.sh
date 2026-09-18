@@ -48,9 +48,9 @@ echo "  run_all.sh completed"
 echo
 echo "== 3/3  regenerated files against the shipped checksums =="
 cp /tmp/_shipped_sums.$$ /tmp/_cmp_sums.$$
-"$PY" - <<'PYEOF'
-import hashlib, os, sys, glob
-sums = sorted(glob.glob("/tmp/_cmp_sums.*"))[-1]
+"$PY" - "/tmp/_cmp_sums.$$" <<'PYEOF'
+import hashlib, os, sys
+sums = sys.argv[1]
 ship = {}
 for line in open(sums, encoding="utf-8"):
     h, p = line.rstrip("\n").split("  ", 1)

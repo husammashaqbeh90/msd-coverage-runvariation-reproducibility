@@ -2,13 +2,23 @@ cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite it using the metadata below."
 type: software
 title: "MSD Coverage and Run-Variation Reproducibility Package"
-version: 4.1.0
-date-released: 2026-09-17
+version: 4.1.1
+date-released: 2026-09-18
 authors:
   - family-names: Mashaqbeh
     given-names: Husam S.
+    affiliation: "School of Computer Sciences, Universiti Sains Malaysia, 11800 USM, Penang, Malaysia"
   - family-names: Mohd Hashim
     given-names: Siti Hazyanti
+    affiliation: "School of Computer Sciences, Universiti Sains Malaysia, 11800 USM, Penang, Malaysia"
+  - family-names: Abd Aziz
+    given-names: Azlan B.
+    affiliation: "Centre for Wireless Technology (CWT), Faculty of Engineering and Technology, Multimedia University, Melaka, Malaysia"
+    email: "azlan.abdaziz@mmu.edu.my"
+  - family-names: Mashagba
+    given-names: Hamza A.
+    affiliation: "Centre for Wireless Technology (CWT), Faculty of Engineering and Technology, Multimedia University, Melaka, Malaysia"
+    email: "hamza.mashagba@mmu.edu.my"
 repository-code: "https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility"
 url: "https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility"
 abstract: "Reproducibility package for the released-artifact secondary analysis reported in 'High Output Coverage Does Not Imply Low Trajectory Error: Coverage-Conditioned Accuracy and Run-to-Run Variation in the Monado SLAM Dataset'."

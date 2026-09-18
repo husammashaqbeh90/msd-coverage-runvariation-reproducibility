@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.1.1 — 2026-09-18
+
+Authorship, funding, and verification-robustness update. No inputs, analysis code, derived tables, figures, or reported numerical results changed.
+
+### Changed
+- `CITATION.cff`, `README.md`, and `VERSION` now identify all four manuscript authors.
+- The release records support from the Multimedia University (MMU) Postdoc Fellowship Fund (grant no. MMUI/260011).
+- `verify_package.sh` now compares regenerated files against the checksum snapshot created by that invocation, preventing an unrelated stale temporary checksum file from affecting the result.
+
 ## 4.1.0 — 2026-09-17
 
 Figure-generation and release-metadata update. No input data, statistical-analysis
