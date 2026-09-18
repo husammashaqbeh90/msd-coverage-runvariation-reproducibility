@@ -1,6 +1,6 @@
 CLEAN-ROOM REPRODUCTION RECORD
-Release: v4.0.0
-Date: 2026-08-25
+Release: v4.1.0
+Date: 2026-09-17
 
 Purpose
 -------
@@ -17,11 +17,14 @@ Procedure
 What the live check proves
 --------------------------
 - Every shipped, manifest-covered file matches SHA256SUMS.txt before analysis.
-- The complete analysis pipeline, including Supplementary Table S5, completes.
+- The complete analysis pipeline, including Supplementary Table S5 and
+  Supplementary Figure S1, completes.
 - The regenerated outputs and figures match the checksums captured before the
   rerun.
 
-The package was rebuilt from the released metric JSON inputs after the final
-display-name, provenance-table, environment-lock, and release-documentation
-updates. The final release archive was then verified from a separate fresh
-extraction. No VIO or SLAM system was executed during this verification.
+The package was rebuilt from the released metric JSON inputs after the v4.1.0
+figure and release-documentation updates. The final release archive was then
+verified from a separate fresh extraction: 77 of 77 manifest-covered files
+matched before and after the full rerun. The `inputs/` and `outputs/`
+directories are byte-identical to v4.0.0. No VIO or SLAM system was executed
+during this verification.

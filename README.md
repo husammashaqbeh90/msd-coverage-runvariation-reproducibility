@@ -1,14 +1,15 @@
-# Reproducibility package v4.0.0
+# Reproducibility package v4.1.0
 
 Companion package for the manuscript:
 
-> **Trajectory Error and Run-to-Run Variation at High Output Coverage: Evidence from Released Monado SLAM Benchmark Results**
+> **High Output Coverage Does Not Imply Low Trajectory Error: Coverage-Conditioned Accuracy and Run-to-Run Variation in the Monado SLAM Dataset**
 
 ## Release scope
 
 This is the submission companion package for the released-artifact secondary
 analysis reported in the manuscript. It reconstructs the analysis population,
-all reported numerical summaries, Supplementary Tables S1–S5, and Figures 1–3
+all reported numerical summaries, Supplementary Tables S1–S5, Figures 1–3,
+and Supplementary Figure S1
 from the released metric JSON files included here. It does not download data,
 modify the released source tree, or execute a VIO/SLAM system.
 
@@ -16,9 +17,11 @@ The permanent repository URL is:
 
 <https://github.com/husammashaqbeh90/msd-coverage-runvariation-reproducibility>
 
-The archival DOI will be assigned by Zenodo when the exact `v4.0.0` GitHub
-release is deposited. It does not alter the inputs, code, or reported results
-in this archive.
+The version-specific archival DOI for v4.1.0 will be assigned when the exact
+`v4.1.0` GitHub release is deposited in Zenodo. Until that deposit is complete,
+the repository URL above identifies the public development record. The DOI
+must not be copied from an earlier release because each archived version has
+its own persistent identifier.
 
 ## Reproduce everything
 
@@ -54,13 +57,19 @@ departure from the tested environment is visible in the execution record.
 | 1 | `src/build_dataset.py` | parsed record tables from released metric JSON files |
 | 2 | `src/export_supplementary_provenance.py` | Supplementary Table S5 provenance table |
 | 3 | `src/analyze.py` | manuscript Tables 1–4 and Supplementary Tables S1–S4 |
-| 4 | `src/figures.py` | Figures 1–3 in PNG and PDF |
+| 4 | `src/figures_v2.py` | Figures 1–3 and Supplementary Figure S1 in PNG and PDF |
 | 5 | `src/verify.py` | external and structural checks |
 | 6 | `src/make_manifest.py` | complete SHA-256 manifest |
 
 `src/make_manifest.py` aborts if a package file other than the two manifest
 files themselves is absent from the manifest. `SHA256SUMS.txt` and
 `MANIFEST.tsv` cannot contain hashes of their own current contents.
+
+`src/figures.py` is retained as the legacy figure generator, with only the
+terminology in the supplementary figure annotation updated from “executions”
+to “runs.” The v4.1.0 pipeline calls `src/figures_v2.py`, which generates the
+revised main figures and invokes the legacy script to reproduce the 122-triplet
+chart now distributed as Supplementary Figure S1.
 
 ## Inputs and analysis groups
 
@@ -104,7 +113,7 @@ analysis are retained in `provenance/MANUSCRIPT_CHANGES_v1_to_v3.md`.
 ## Citation
 
 Metadata for citing this software package are provided in `CITATION.cff`.
-After the `v4.0.0` release is archived in Zenodo, cite the Zenodo **version
+After the `v4.1.0` release is archived in Zenodo, cite the Zenodo **version
 DOI** for this exact release; the Zenodo **concept DOI** may be used when a
 reference to all versions is appropriate. The manuscript itself is not yet a
 published article and therefore has no article DOI.

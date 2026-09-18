@@ -214,7 +214,7 @@ def figure3(det):
     fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False,
                bbox_to_anchor=(0.5, 0.028))
     fig.text(0.5, 0.002,
-             "Each row is one sequence for which all three released executions satisfied C ≥ 0.99 "
+             "Each row is one sequence for which all three released runs satisfied C ≥ 0.99 "
              "and S ≥ 0.99; rows sorted by within-triplet geometric mean ATE.\n"
              "Markers show the three individual ATE values. Vertical reference lines mark 1 m "
              "and 10 m.",

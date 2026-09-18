@@ -37,8 +37,8 @@ echo "== stage 3/6  analyze.py =="
 "$PY" src/analyze.py | tee outputs/analysis_console.txt
 
 echo
-echo "== stage 4/6  figures.py =="
-"$PY" src/figures.py
+echo "== stage 4/6  figures_v2.py =="
+"$PY" src/figures_v2.py
 
 echo
 echo "== stage 5/6  verify.py =="

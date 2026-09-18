@@ -1,14 +1,17 @@
 path	bytes	sha256	role
-CITATION.cff	861	adc8b10a1f1affda49c86ef1a2ff48df02b5197b8440e29cbc477ae270c2d82c	doc    - package documentation
+CHANGELOG.md	1820	58586c71780251b2e97f1d98c2b0cd9b97b80407bfdb1600c9042be9a2cf906a	doc    - package documentation
+CITATION.cff	881	8eab25899d123f6eb3b5e0ba6e60a9d487515edbeef0bad76f0e29809402ca98	doc    - package documentation
 LICENSE	2582	7fe78f362ac0527df22f1ddadc97fbace0177a88b455303dea4487833cc96930	doc    - package documentation
-README.md	4968	ac860c9fdc3153178e15c5c9a30045621f02c01be4a24962b0ab834d40bf4cde	doc    - package documentation
-VERSION	173	d832456ba69fb2b78a03cc1f123662685869cd9c447fbb57a3773c89cbf2b64d	doc    - package documentation
-figures/Figure1_study_design.pdf	31955	806cd311e2dd4284c36c08d43b887d5885bdaac358b609756dfd7bfd1b4840c8	output - generated figure
-figures/Figure1_study_design.png	241923	8b996ac0c56a2afb465fa170d6bf83b4f2cb9cd3aab5714f015bd7d0ac570137	output - generated figure
-figures/Figure2_high_coverage_ATE_distribution.pdf	29016	58ac1b47efe6241ac28dec0015da24dc280f58f7bef9134c04d49e33c148c860	output - generated figure
-figures/Figure2_high_coverage_ATE_distribution.png	198470	1686857d1299dacacaf6a6671944a8bca9f7e876c415b68da7eda64042dcc615	output - generated figure
-figures/Figure3_repeated_run_ATE_ranges.pdf	69059	6c76c6522bc98f5597c4e9df98347cd6463715ec5871cd99dcd9449045727f82	output - generated figure
-figures/Figure3_repeated_run_ATE_ranges.png	489534	5699e89be5c3ba8186932f172af4ba4bb75f9e8ed66afb1ce6468bb845335aaf	output - generated figure
+README.md	5583	7de8d695f05b2483f16103af77b5f4071a4af32ce49cd2962cd81bce3cf75508	doc    - package documentation
+VERSION	193	4d618c219af3b0285a233e3baa4b0ed32ad8457fc67b7253d2f7073ac1577c00	doc    - package documentation
+figures/Figure1_study_design.pdf	28036	7bd9be42c31c9f883ac64c274fd6f05c68262e755372d5b9048577fb15da6b8d	output - generated figure
+figures/Figure1_study_design.png	310591	6e3cee680cf69ffd48e70e7eb2b54069a8eaa578be41304d70e4b2e99e9bfa6e	output - generated figure
+figures/Figure2_coverage_and_ATE.pdf	57409	14893a1218cfe400089c8b95b1ce3ec4651f5c89fe329fd5e3209ce346a884df	output - generated figure
+figures/Figure2_coverage_and_ATE.png	424962	f6ca5afe04e2990eb5cd26a330d0587b994d002b23cb169a0c3e089da57ace08	output - generated figure
+figures/Figure3_repeated_run_variation.pdf	31788	adacb7f0fdcf1dd0f1d3b3f645e5f926fd4ce376a59c7f82aa390d280bcfbbec	output - generated figure
+figures/Figure3_repeated_run_variation.png	221552	9cfbc0ec98f0223f1a071b530e287b8cdf45fde7c2d2d0d020552e1e5fa56af8	output - generated figure
+figures/FigureS1_repeated_run_ATE_ranges.pdf	69047	1440df1615c81cc839c9dd9b2097851d91e0e303137e6ee58cd416e09625f377	output - generated figure
+figures/FigureS1_repeated_run_ATE_ranges.png	489912	05c905f9c3c56f8b31ac98ebd41a68488d4bbde8befbf406308ccd154b7a937d	output - generated figure
 inputs/batch/ate.basalt.json	20827	e20b8112eeb6617704cdfe0ac1c716cc15beab824a3261e2b57c5a4ccfa0ba6c	input  - released metric JSON (verbatim copy)
 inputs/batch/ate.dmvio.rt.json	19333	2d4f7c0f355b438027dd8b9e1f2b760bcea0355c3f0e96f23a634b8e8dadc886	input  - released metric JSON (verbatim copy)
 inputs/batch/ate.dmvio.scaled.json	12064	cd9f44a2cb943e531520c2e65fdb8d0fc84cae7526aea3308dd1f38e3607bafe	input  - released metric JSON (verbatim copy)
@@ -58,17 +61,18 @@ outputs/records_dmvio_rt.csv	19274	b80cc7b06ad26305585f11599166e4806255bf18e3b70
 outputs/records_primary.csv	86888	63ef1409c27fee7050e80f416154464c205fac65cf6ef8c6cbbcde92baabaa9c	output - generated
 outputs/records_snakeslam_rt.csv	21160	2da16ed2121f3f512420e4913d1c4285fecddf5a3e0618479284dafaea4a1837	output - generated
 outputs/verification_report.txt	3188	a21e1895f1d409b903075f9db2dd8ca4708d786974d09ef68c2c94bb86f1726e	output - generated
-provenance/CLEAN_ROOM_REPRODUCTION_PROOF.txt	1052	3941d1100fcc1a775761baa6fdf6de374bb03616934845e3fa79be406b21a991	doc    - provenance / audit
+provenance/CLEAN_ROOM_REPRODUCTION_PROOF.txt	1184	a478bad767f0ce9c2325fa40329a11cf5f670eabe69e7db16e3852d4b4ba7a22	doc    - provenance / audit
 provenance/EVALUATION_GROUP_PROVENANCE.md	8395	199f2647359c9638c6ae76e21059190de756f569a026b711e8357629edba4ac4	doc    - provenance / audit
-provenance/FIGURE_TYPESETTING.md	750	4f3d4842abf99876abbc8b7d72fdfbcc83a683f68abe507889374bf3fcbb91a8	doc    - provenance / audit
+provenance/FIGURE_TYPESETTING.md	911	235fd011158ef9031015f8b41e5d8a6e57a4105cfa0d2cc1605ed0070c423ae1	doc    - provenance / audit
 provenance/MANUSCRIPT_CHANGES_v1_to_v3.md	4260	68cd9280fa0b858b762e9cd2ae3e0791636ddebce098c2cafb9b23017b754fe7	doc    - provenance / audit
 provenance/RELEASE_SCOPE_AND_LIMITATIONS.md	1810	5ff290bf2cae439294896d698dfc343b890dfe0d1e8f8aa6f1430665eb7d9874	doc    - provenance / audit
 requirements.txt	46	4a3b8f655b2cbaa5e7a06fea1584c7553e94ef3ff58161798cb4c120fd627c3a	env    - tested Python dependency versions
-run_all.sh	1362	1ad675475873a75c447cc066631529e56ddd1b4019044a0b6a8d101d76b59bb8	code   - single entry point
+run_all.sh	1368	3ebf3551c3d5d4dccf7989ee8263b6430df78ea49b3ed805a79ad6f9e58aea3e	code   - single entry point
 src/analyze.py	14303	d3da2b61dd712678d77dc9568154d352cc7522cf08b8e7e855763ff21dec3398	code   - analysis stage
 src/build_dataset.py	5462	55be0f40235f6b297febe27c12289780da85b1a531dd7bf71cb08b5ce83782a9	code   - analysis stage
 src/export_supplementary_provenance.py	1551	063de2abb5868ea04a80daf920c23b80dfe99e8b5f4cd3f1a4135b46d550847d	code   - analysis stage
-src/figures.py	10931	12dd540bcca4a472f748f8e40c429452d2816d8cdc0b757559ae4fc8209b341a	code   - analysis stage
+src/figures.py	10925	334f395863a41a8905b728e95f6e21fe85b5ee8e2be1a741da62e45ae6880490	code   - analysis stage
+src/figures_v2.py	19255	65df815d37e0e1f7a5ed255a99e126a43b191f29b8813c9a32435e45f2908ddf	code   - analysis stage
 src/make_manifest.py	2951	0f1df3bb13a3db33cf23f866286b072337bfce81ed3e15258d80744f028ca8d8	code   - analysis stage
 src/verify.py	5847	aadf33f5ca6898aa6ea2caa7e834358f5e3be5cb196143fafae6f70733f0512a	code   - analysis stage
 verify_package.sh	2127	c68c784205aee5b1c660478eeedaab861d9fa64a367ba587e0787ddbd8d67393	doc    - package documentation
